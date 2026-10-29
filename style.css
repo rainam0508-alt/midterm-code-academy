@@ -355,3 +355,31 @@ p {
         padding: 22px 14px;
     }
 }
+/* Responsive improvement for small screens */
+@media (max-width: 600px) {
+    .site-header {
+        gap: 14px;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .hero h1 {
+        font-size: 23px;
+    }
+
+    .course-card,
+    .about-card,
+    .journey-card {
+        width: 100%;
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .contact-section {
+        overflow-wrap: anywhere;
+    }
+}
