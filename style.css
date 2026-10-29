@@ -128,13 +128,9 @@ p {
     font-size: 15px;
 }
 
-/* Unique Improvement 1:
-   The course cards lift slightly when hovered.
-   This makes the cards feel interactive.
-   Properties used: transform, box-shadow and transition. */
 .course-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 7px 16px rgba(52, 52, 126, 0.12);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(52, 52, 126, 0.18);
     border-color: #7777cf;
 }
 
