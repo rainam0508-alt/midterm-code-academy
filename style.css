@@ -1,0 +1,361 @@
+/* 1. General Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #edf2fa;
+    color: #263044;
+    line-height: 1.6;
+    padding: 24px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.3;
+}
+
+p {
+    color: #687487;
+}
+
+/* 2. Header and Navigation */
+.site-header {
+    background-color: #ffffff;
+    padding: 20px 24px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.logo {
+    color: #34347e;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: #606979;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+    color: #34347e;
+    text-decoration: underline;
+}
+
+/* 3. Hero Section */
+.hero {
+    background-color: #34347e;
+    color: #ffffff;
+    text-align: center;
+    padding: 35px 20px;
+    border-radius: 14px;
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    color: #e6e7ff;
+    font-size: 18px;
+}
+
+/* 4. Section Headings */
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+/* 5. Courses Section */
+.courses-section,
+.about-section,
+.journey-section {
+    margin-bottom: 26px;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.course-card {
+    background-color: #ffffff;
+    border: 1px solid #d9dfeb;
+    border-radius: 14px;
+    padding: 18px 16px;
+    min-height: 132px;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.course-card h3 {
+    color: #45458b;
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+.course-card p {
+    font-size: 15px;
+}
+
+/* Unique Improvement 1:
+   The course cards lift slightly when hovered.
+   This makes the cards feel interactive.
+   Properties used: transform, box-shadow and transition. */
+.course-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 16px rgba(52, 52, 126, 0.12);
+    border-color: #7777cf;
+}
+
+/* Most Popular Course */
+.popular-course {
+    background-color: #e5e8ff;
+    border: 2px solid #7777cf;
+    position: relative;
+    padding-top: 32px;
+}
+
+.popular-label {
+    position: absolute;
+    top: 7px;
+    right: 9px;
+    background-color: #34347e;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 7px;
+    border-radius: 20px;
+}
+
+/* 6. About Section */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.about-card {
+    background-color: #ffffff;
+    padding: 22px;
+    border-radius: 14px;
+}
+
+.about-card h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.why-card {
+    background-color: #e1e7ff;
+}
+
+.about-card p {
+    font-size: 16px;
+}
+
+/* 7. Learning Journey Section */
+.journey-section {
+    background-color: #ffffff;
+    padding: 26px 20px;
+    border-radius: 14px;
+}
+
+.journey-intro {
+    text-align: center;
+    margin-top: -12px;
+    margin-bottom: 22px;
+}
+
+.journey-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.journey-card {
+    background-color: #f5f6ff;
+    border: 2px solid #d9dcf2;
+    border-radius: 12px;
+    padding: 22px 18px;
+    text-align: center;
+    transition: border-color 0.3s ease;
+}
+
+/* Unique Improvement 2:
+   The learning step border changes color on hover.
+   This highlights the step being explored.
+   Properties used: border-color and transition. */
+.journey-card:hover {
+    border-color: #7777cf;
+}
+
+.step-number {
+    display: inline-block;
+    color: #34347e;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.journey-card h3 {
+    color: #34347e;
+    margin-bottom: 8px;
+}
+
+.journey-card p {
+    font-size: 14px;
+}
+
+/* 8. Contact Section */
+.contact-section {
+    background-color: #e1e7ff;
+    text-align: center;
+    padding: 25px 16px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+}
+
+.contact-section h2 {
+    color: #34347e;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.contact-section p {
+    margin-bottom: 8px;
+}
+
+.contact-section a {
+    color: #34347e;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+.contact-section a:hover {
+    color: #17174d;
+}
+
+/* 9. Footer */
+.site-footer {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.site-footer p {
+    margin-bottom: 4px;
+}
+
+/* 10. Tablet Responsive Design */
+@media (max-width: 900px) {
+    body {
+        padding: 18px;
+    }
+
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .courses-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
+
+/* 11. Mobile Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .site-header {
+        padding: 18px 12px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .navbar {
+        gap: 12px 18px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 28px 14px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .courses-grid,
+    .about-grid,
+    .journey-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .course-card {
+        min-height: 110px;
+    }
+
+    .about-card {
+        padding: 18px;
+    }
+
+    .journey-section {
+        padding: 22px 14px;
+    }
+}
